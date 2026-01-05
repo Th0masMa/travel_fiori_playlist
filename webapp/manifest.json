@@ -119,6 +119,28 @@
             "settings": {
               "contextPath": "/Travel",
               "variantManagement": "None",
+              "views": {
+                "paths": [
+                  {
+                    "key": "tab2",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#SPV_All"
+                  },
+                  {
+                    "key": "tab3",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionPresentationVariant#SPV_Accepted"
+                  },
+                  {
+                    "key": "tab1",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Open"
+                  },
+                  {
+                    "key": "tab4",
+                    "entitySet" : "travel_chart",
+                    "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV_All"
+                  }
+                ],
+                "showCounts": false
+              },
               "navigation": {
                 "Travel": {
                   "detail": {
@@ -129,7 +151,22 @@
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.LineItem": {
                   "tableSettings": {
-                    "type": "ResponsiveTable"
+                    "type": "ResponsiveTable",
+                    "quickVariantSelection1": {
+                      "paths": [
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#All"
+                        },
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Open"
+                        },
+                        {
+                          "annotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#Accepted"
+                        }
+                      ],
+                      "hideTableTitle": true,
+                      "showCounts": true
+                    }
                   }
                 }
               }
